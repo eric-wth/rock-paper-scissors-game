@@ -27,7 +27,7 @@ const computerPlay = () => {
 }
 
 const playRound = () => {
-    playerSelection = prompt("Welcome to my Rock, Paper, Scissors Game. Please enter rock, paper, or scissors?").toLowerCase();
+    playerSelection = prompt("Welcome to my Rock, Paper, Scissors Game. Please enter rock, paper, or scissors?").toLowerCase().trim();
 
     if(playerSelection === 'rock' | 'paper' | 'scissors') {
         computerSelection = computerPlay();  
